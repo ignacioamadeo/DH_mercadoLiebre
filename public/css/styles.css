@@ -1,0 +1,10 @@
+body {
+    background-color: yellow;
+    font-family: Helvetica;
+    text-align: center;
+}
+#tituloSeccion {color: blue}
+p {
+    font-family: Helvetica;
+    text-align: center;    
+}
