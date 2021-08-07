@@ -1,10 +1,14 @@
 body {
-    background-color: yellow;
+    background-color: #EAC926;
     font-family: Helvetica;
     text-align: center;
 }
-#tituloSeccion {color: blue}
+#tituloSeccion {
+    color: blue;
+    font-size: 24px;
+}
 p {
-    font-family: Helvetica;
-    text-align: center;    
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 12px;    
 }
