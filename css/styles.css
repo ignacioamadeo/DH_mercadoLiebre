@@ -12,3 +12,6 @@ p {
     text-align: center;
     font-size: 12px;    
 }
+main {
+    width: 90vw;
+}
