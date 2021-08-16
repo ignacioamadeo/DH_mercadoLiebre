@@ -2,12 +2,25 @@
     font-family: 'Roboto', sans-serif;
 }
 
+section{
+    width: 90vw;
+    text-align: left;
+    box-sizing: border-box;
+}
+
 header{
     background-color: #EAC926;
+    align-items: center;
+}
+
+.logoMercadoliebre{
+    width: 50vw;
 }
 
 article {
-    background-color: #ebebeb;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+    border-radius: 5px;
 }
 
 h1{
@@ -45,8 +58,18 @@ footer{
     font-size: 18px;
 }
 
+.descuentos{
+    color: #39b54a;
+    font-size: 10px;
+}
+
 .producto{
-    font-size: 16px;
+    font-size: 8px;
+}
+
+.descripcionProducto{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
 }
 
 .burger-menu{
