@@ -1,5 +1,58 @@
 *{
     font-family: 'Roboto', sans-serif;
-    font-size: 12px; 
 }
 
+header{
+    background-color: #EAC926;
+}
+
+article {
+    background-color: #ebebeb;
+}
+
+h1{
+    font-size: 24px;
+}
+
+h2{
+    font-size: 20px; 
+    color: #666;
+}
+
+p{
+    font-size: 16px; 
+    color: #666;
+}
+
+ul {
+    list-style: none;
+}
+
+footer{
+    text-align: center;
+    color: #666;
+    background-color: white;
+}
+
+.iconoSeparador{
+    text-align: center;
+    color:#1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.precios{
+    font-size: 18px;
+}
+
+.producto{
+    font-size: 16px;
+}
+
+.burger-menu{
+    font-size: 2em;
+    text-align: center;
+    color:white;
+    background-color: #1259c3;
+    width: 2em;
+}
