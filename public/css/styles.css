@@ -9,12 +9,40 @@ section{
 }
 
 header{
-    background-color: #EAC926;
+    background-color: #fff159;
     align-items: center;
 }
 
 .logoMercadoliebre{
-    width: 50vw;
+    width: 200px;
+    margin: 10px 30px 10px 30px;
+}
+
+form.buscador input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 40%;
+    background: #f1f1f1;
+  }
+
+  form.buscador button {
+    float: left;
+    width: 20px;
+    padding: 10px;
+    background: grey;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+
+.logoEnvios{
+    color:#39b54a;
+    font-size: 1.5em;
+    margin-bottom: 2px;
 }
 
 article {
@@ -55,21 +83,28 @@ footer{
 }
 
 .precios{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .descuentos{
     color: #39b54a;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .producto{
-    font-size: 8px;
+    color: #666;
+    font-size: 12px;
+    margin-top: 1em;
 }
 
 .descripcionProducto{
     border-top: solid 1px #ebebeb;
     padding: 15px;
+}
+
+.fotoProducto{
+    width: 100%;
+    height: 100%;
 }
 
 .burger-menu{
@@ -79,3 +114,15 @@ footer{
     background-color: #1259c3;
     width: 2em;
 }
+
+@media (max-width: 361px) {
+    .producto{
+        visibility: hidden;
+    }
+    .navbarMenu{
+        visibility: hidden;
+    }
+    .navbarLogin{
+        visibility: hidden;
+    }
+} 
