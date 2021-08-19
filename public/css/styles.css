@@ -13,8 +13,8 @@ header{
 }
 
 .logoMercadoliebre{
-    max-width: 100px;
-    margin: 10px
+    max-width: 200px;
+    margin: 10px 0 0 10px;
 }
 
 form.buscador input[type=text] {
@@ -41,12 +41,12 @@ article {
 
 .claimHeader{
     font-weight: 400;
-    font-size: 12px;
-    color: #666;
-    text-align: right;
+    font-size: 16px;
+    color: #337;
+    text-align: center;
     display: inline-block;
-    max-width: 150px;
-    margin-right: 10px;
+    padding: 10px;
+    margin: 0;
 }
 
 h2{
@@ -63,28 +63,33 @@ p{
     list-style: none;
     padding: 0;
     margin: 0;
+    display: none;
 }
 
 .navbarMenu a{
     text-decoration: none;
-    color: #666;
+    color: #745900;
     display: inline-block;
-    padding: 5px 0;
-    font-size: 12px;
+    padding: 3px 1px 3px 1px;
+    font-size: 14px;
+    margin: 15px 10px;
 }
 
 .navbarLogin {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: none;
 }
 
 .navbarLogin a{
     text-decoration: none;
-    color: #666;
+    color: #2b2b2b;
     display: inline-block;
-    padding: 5px 0;
-    font-size: 12px;
+    padding: 3px 1px 3px 1px;
+    margin: 15px 10px;
+    font-size: 14px;
+    text-align: center;
 }
 
 footer{
@@ -126,36 +131,31 @@ footer{
 }
 
 .burger-menu{
-    font-size: 2em;
     text-align: center;
+    font-size: 18px;
     color:white;
     background-color: #1259c3;
-    width: 40px;
-    padding: 5px 0;
+    max-width: 50px;
+    padding: 15px 0;
     display: block;
     border-radius: 8px;
     margin: auto;
 }
 
-@media (max-width: 361px) {
-    .producto{
-        display: none;
-    }
-    .navbarMenu{
-        display: none;
-    }
-    .navbarLogin{
-        display: none;
-    }
-} 
 
-@media (min-width: 362px) {
+
+@media (min-width: 568px) {
+    .claimHeader{
+        max-width: 350px;
+        text-align: right;
+    }
     .burger-menu{
-        visibility: hidden;
+        display: none;
     }
     .headerTopBar{
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     .headerBottomBar{
         display: flex;
@@ -169,3 +169,11 @@ footer{
         margin: 0 5px;
     }
 } 
+
+@media (min-width: 1200px){
+    .headerTopBar, .headerBottomBar{
+        max-width: 1200px;
+        margin: auto;
+        align-items: center;
+    }
+}
