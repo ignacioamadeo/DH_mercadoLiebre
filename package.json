@@ -18,5 +18,8 @@
   "homepage": "https://github.com/ignacioamadeo/grupo_04_mercadoLiebre#readme",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "script": {
+    "start": "node app.js"
+},
 }
