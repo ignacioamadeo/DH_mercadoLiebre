@@ -10,33 +10,21 @@ section{
 
 header{
     background-color: #fff159;
-    align-items: center;
 }
 
 .logoMercadoliebre{
-    width: 200px;
-    margin: 10px 30px 10px 30px;
+    max-width: 100px;
+    margin: 10px
 }
 
 form.buscador input[type=text] {
     padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
+    font-size: 12px;
+    border: 1px solid lightgray;
     float: left;
-    width: 40%;
-    background: #f1f1f1;
-  }
-
-  form.buscador button {
-    float: left;
-    width: 20px;
-    padding: 10px;
-    background: grey;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none; /* Prevent double borders */
-    cursor: pointer;
+    width: 90%;
+    background: white;
+    margin: 10px 0px 10px 30px;
   }
 
 .logoEnvios{
@@ -51,12 +39,18 @@ article {
     border-radius: 5px;
 }
 
-h1{
-    font-size: 24px;
+.claimHeader{
+    font-weight: 400;
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+    display: inline-block;
+    max-width: 150px;
+    margin-right: 10px;
 }
 
 h2{
-    font-size: 20px; 
+    font-size: 18px; 
     color: #666;
 }
 
@@ -65,8 +59,32 @@ p{
     color: #666;
 }
 
-ul {
+.navbarMenu {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbarMenu a{
+    text-decoration: none;
+    color: #666;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 12px;
+}
+
+.navbarLogin {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbarLogin a{
+    text-decoration: none;
+    color: #666;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 12px;
 }
 
 footer{
@@ -112,17 +130,42 @@ footer{
     text-align: center;
     color:white;
     background-color: #1259c3;
-    width: 2em;
+    width: 40px;
+    padding: 5px 0;
+    display: block;
+    border-radius: 8px;
+    margin: auto;
 }
 
 @media (max-width: 361px) {
     .producto{
-        visibility: hidden;
+        display: none;
     }
     .navbarMenu{
-        visibility: hidden;
+        display: none;
     }
     .navbarLogin{
+        display: none;
+    }
+} 
+
+@media (min-width: 362px) {
+    .burger-menu{
         visibility: hidden;
+    }
+    .headerTopBar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .headerBottomBar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .headerBottomBar ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .headerBottomBar li{
+        margin: 0 5px;
     }
 } 
