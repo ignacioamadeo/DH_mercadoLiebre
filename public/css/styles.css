@@ -6,6 +6,10 @@ li{
     text-decoration: none;
 }
 
+body{
+    max-width: 1000px;
+}
+
 section{
     width: 90vw;
     text-align: left;
@@ -14,6 +18,7 @@ section{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    max-width: 1000px;
 }
 
 header{
@@ -93,7 +98,7 @@ p{
 footer{
     text-align: center;
     color: #666;
-    background-color: white;
+    background-color: darkgrey;
 }
 
 .iconoSeparador{
