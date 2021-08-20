@@ -2,6 +2,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+li{
+    text-decoration: none;
+}
+
 section{
     width: 90vw;
     text-align: left;
@@ -15,22 +19,6 @@ header{
 .logoMercadoliebre{
     max-width: 200px;
     margin: 10px 0 0 10px;
-}
-
-form.buscador input[type=text] {
-    padding: 10px;
-    font-size: 12px;
-    border: 1px solid lightgray;
-    float: left;
-    width: 90%;
-    background: white;
-    margin: 10px 0px 10px 30px;
-  }
-
-.logoEnvios{
-    color:#39b54a;
-    font-size: 1.5em;
-    margin-bottom: 2px;
 }
 
 article {
@@ -105,24 +93,46 @@ footer{
     margin-bottom: 10px;
 }
 
+.logoEnvios{
+    color:#39b54a;  
+    font-size: 25px;
+    text-decoration: none;
+    margin-top: 0;
+    display: flex;
+    text-align:right;
+    justify-content: right;
+    position: relative;
+    top: -12px;
+    padding: 0 25px 0 0;
+}
+
 .precios{
     font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 5px 0 25px;
 }
 
 .descuentos{
     color: #39b54a;
     font-size: 12px;
+    justify-content: space-between;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .producto{
     color: #666;
-    font-size: 12px;
-    margin-top: 1em;
+    font-size: 14px;
+    justify-content: space-between;
+    padding: 10px 5px 20px 25px;
+    display: block;
 }
 
 .descripcionProducto{
     border-top: solid 1px #ebebeb;
-    padding: 15px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .fotoProducto{
