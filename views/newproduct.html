@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>¡Compra y vende en Mercado Liebre, tu tienda online!</title>
+        <link href="./css/styles.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    </head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <!-- FORMULARIO de carga de un producto --->
+        <form action="/crear-producto" method=POST class=formNuevoProducto>
+            <div>
+                <label>Nombre del producto</label>
+                <input type="text" name="nombreProducto" value="" placeholder="Bicicleta rodado 20">
+            </div>
+            <div>
+                <label>Precio</label>
+                <input type="text" name="precioProducto" value="" placeholder="$150.00">
+            </div>
+            <div>
+                <label>Está en oferta</label>
+                <input type="radio" name="enOfertaProducto" value="">
+            </div>
+            <div>
+                <label>Categoría</label>
+                <select name="categoria"> 
+                    <option value="hogar">Hogar</option>
+                    <option value="electro">Electro</option>
+                    <option value="indumentaria">Indumentaria</option>
+                </select>
+            </div>
+            <div>
+                <label>Ciudad</label>
+                <select name="ciudad"> 
+                    <option value="BA">Buenos Aires</option>
+                    <option value="ROS">Rosario</option>
+                    <option value="MDZ">Mendoza</option>
+                </select>
+            </div>
+            <div>
+                <label>Descripción</label>
+                <textarea name=descripcionProducto></textarea>
+            </div>
+            <button type="reset">Borrar</button>
+            <button type="submit">Guardar</button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

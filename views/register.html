@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Compra y vende en Mercado Liebre, tu tienda online!</title>
+    <link href="./css/styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <!-- FORMULARIO de carga de un producto --->
+        <form action="/newUser" method=POST class=formNewUser>
+            <div>
+                <label>Nombre y apellido</label>
+                <input type="text" name="nombreApellido" placeholder="ej: Juan Perez">
+            </div>
+            <div>
+                <label>Nombre de usuario</label>
+                <input type="text" name="nombreApellido" placeholder="ej: perezjuan">
+            </div>
+            <div>
+                <label>Fecha de nacimiento</label>
+                <input type="date" name="fechaNacimiento" value="2021-01-01">
+            </div>
+            <div>
+                <label>Domicilio</label>
+                <input type="text" name="domicilio" placeholder="ej: Calle falsa 123, CABA">
+            </div>
+            <div>
+                <label>¿Deseas comprar o vender?</label>
+                <input type="radio" name="compraOVenta" value="Comprar">
+                <input type="radio" name="compraOVenta" value="Vender">
+                <input type="radio" name="compraOVenta" value="Ambas">
+            </div>
+            <div>
+                <label>Categorías de interés</label>
+                <select name="categoriasInteres"> 
+                    <option value="electro">Electro</option>
+                    <option value="moda">Moda</option>
+                    <option value="hogar">Hogar</option>
+                    <option value="jugueteria">Juguetería</option>
+                    <option value="vidaSana">Vida sana</option>
+                </select>
+            </div>
+            <div>
+                <label>Subir foto de perfil</label>
+                <input type="file" name="avatar" accept=".jpg">
+            </div>
+            <div>
+                <label>Introducir contraseña</label>
+                <input type="password" name="password">
+                <label>Vuelve a repetir la contraseña</label>
+                <input type="password" name="password2">
+            </div>
+            <button type="reset">Borrar</button>
+            <button type="submit">Guardar</button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
