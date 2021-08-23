@@ -181,6 +181,17 @@ footer{
     font-size: 14px;
     padding: 3px;
 }
+/* <!-- FORM nuevo usuario: --> */
+.formNewUser{
+    display: block;
+    margin: auto;
+}
+.formNewUser div{
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 6px 0 6px 0;
+}
 
 @media (min-width: 568px) {
     .claimHeader{
