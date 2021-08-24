@@ -23,11 +23,16 @@ section{
 
 header{
     background-color: #fff159;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 980;
+    z-index: 10;
 }
 
 .logoMercadoliebre{
     max-width: 200px;
-    margin: 10px 0 0 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -184,7 +189,9 @@ footer{
 /* <!-- FORM nuevo usuario: --> */
 .formNewUser{
     display: block;
-    margin: auto;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .formNewUser div{
     font-size: 14px;
