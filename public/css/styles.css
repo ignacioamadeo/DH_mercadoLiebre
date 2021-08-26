@@ -233,10 +233,13 @@ footer{
 
 /* <!----- FORM login: -----> */
 .formLogin{
+    background-color: #fff159;
+    position: relative;
+    top: 30px;
     display: flex;
     margin: auto;
-    width: 60vw;
-    height: 80vw;
+    width: 350px;
+    height: 500px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -255,6 +258,7 @@ footer{
     border-style: none;
     padding: 10px 25px 10px 25px;
     margin: 0 10px 0 10px;
+    font-size: 16px;
   }
   
   .formLogin button:hover {
@@ -271,9 +275,22 @@ footer{
     padding: 10px 0 10px 0;
     text-align: center;
   }
+
+  .logoHeaderLogin{
+      width: 90%;
+      margin: 0 auto; 
+  }
+
+  /* Style the video: 100% width and height to cover the entire window */
+.myVideo {
+    left: 50%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
   
-
-
 /* <!-- WEB descripcion producto: --> */
 .productoDetalle{
     position: relative;
