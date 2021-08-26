@@ -252,13 +252,17 @@ footer{
     text-align: center;
 }
 
+.formLogin div{
+    display: block;
+}
+
 .formLogin button {
     border-radius: 12px;
     transition-duration: 0.4s;
     border-style: none;
     padding: 10px 25px 10px 25px;
     margin: 0 10px 0 10px;
-    font-size: 16px;
+    font-size: 14px;
   }
   
   .formLogin button:hover {
@@ -274,11 +278,19 @@ footer{
     margin: 0 10px 0 10px;
     padding: 10px 0 10px 0;
     text-align: center;
+    width: 80%;
   }
 
   .logoHeaderLogin{
       width: 90%;
       margin: 0 auto; 
+  }
+
+  .terminosLogin{
+      color: rgb(80, 80, 0);
+      text-decoration: none;
+      font-size: 12px;
+
   }
 
   /* Style the video: 100% width and height to cover the entire window */
@@ -288,7 +300,7 @@ footer{
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 0;
+    z-index: -10;
   }
   
 /* <!-- WEB descripcion producto: --> */
@@ -327,7 +339,7 @@ footer{
 .copyright{
     text-align: center;
     color: rgb(214, 214, 214);
-    background-color: darkgrey;
+    background-color: rgb(104, 93, 0);
     padding-top: 12px;
     padding-bottom: 12px;
 }
