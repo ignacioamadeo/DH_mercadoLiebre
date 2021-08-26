@@ -12,6 +12,7 @@ li{
 
 body{
     max-width: 1000px;
+    margin: auto;
 }
 
 section{
@@ -29,12 +30,10 @@ section{
 
 header{
     background-color: #fff159;
-    position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     max-width: 980;
-    z-index: 10;
 }
 
 .logoMercadoliebre{
@@ -58,7 +57,7 @@ header{
 
 h2{
     font-size: 14px; 
-    color: #666;
+    color: rgb(80, 80, 80);
 }
 
 
@@ -120,21 +119,22 @@ h2{
     }
 }
 
-
-
 /* <!-------- HOME MAIN -------> */
 
 article {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 10px;
     border-radius: 5px;
     max-width: 200px;
     position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 p{
     font-size: 12px; 
-    color: #666;
+    color: rgb(88, 88, 88);
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .logoEnvios{
@@ -146,7 +146,7 @@ p{
     text-align:right;
     justify-content: right;
     position: absolute;
-    top: 68%;
+    top: 72%;
     left: 75%;
 }
 
@@ -169,7 +169,7 @@ p{
     color: #666;
     font-size: 12px;
     justify-content: space-between;
-    padding: 10px 5px 20px 25px;
+    padding: 5px 5px 10px 25px;
     display: block;
 }
 
@@ -188,15 +188,17 @@ p{
 
 footer{
     text-align: center;
-    color: #666;
+    color: rgb(173, 173, 173);
     background-color: darkgrey;
 }
 
 .iconoSeparador{
     text-align: center;
     color:#1259c3;
-    font-size: 15px;
+    font-size: 28px;
     margin-bottom: 10px;
+    margin-top: 10px;
+    transition: 450ms;
 }
 
 
@@ -229,6 +231,49 @@ footer{
     padding: 6px 0 6px 0;
 }
 
+/* <!----- FORM login: -----> */
+.formLogin{
+    display: flex;
+    margin: auto;
+    width: 60vw;
+    height: 80vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.formLogin form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 10px 0 10px;
+    text-align: center;
+}
+
+.formLogin button {
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    border-style: none;
+    padding: 10px 25px 10px 25px;
+    margin: 0 10px 0 10px;
+  }
+  
+  .formLogin button:hover {
+    background-color: #5f5f5f;
+    color: white;
+  }
+
+  .formLogin input {
+    border-radius: 12px;
+    border-color: #c7c7c7;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0 10px 0 10px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+  }
+  
+
+
 /* <!-- WEB descripcion producto: --> */
 .productoDetalle{
     position: relative;
@@ -260,6 +305,14 @@ footer{
     opacity: 0.8;
     background-color: #fff159;
     border-radius: 20px;
+}
+
+.copyright{
+    text-align: center;
+    color: rgb(214, 214, 214);
+    background-color: darkgrey;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 /* <!---------------- MEDIA QUERY tablet a partir de acá: -----------------> */
@@ -305,9 +358,11 @@ footer{
     }
 } 
 
-@media (min-width: 1200px){
+/* <!---------------- MEDIA QUERY compu a partir de acá: -----------------> */
+
+@media (min-width: 1000px){
     .headerTopBar, .headerBottomBar{
-        max-width: 1200px;
+        max-width: 1000px;
         margin: auto;
         align-items: center;
     }
@@ -325,5 +380,40 @@ footer{
         display: inline-block;
         padding: 0 10px 0 0;
         margin: 0 0 0 0;
+    }
+    article {
+        border-style: solid;
+        border-color: rgba(204, 204, 204, 0.19);
+        border-width: 1px;
+        transition: 450ms;
+        box-shadow: none;
+    }
+    
+    article:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    article .producto{
+        color: white;
+        transition: 1000ms;
+    }
+
+   article:hover .producto{
+        color: black;
+    }
+
+    article .logoEnvios{
+        transition: 1000ms;
+    }
+
+    article:hover .logoEnvios{
+        transform: rotate(-45deg);
+    }
+    footer{
+        display:flex
+    }
+
+    .iconoSeparador:hover {
+        color: #fff159;
     }
 }
