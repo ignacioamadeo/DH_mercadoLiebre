@@ -238,8 +238,8 @@ footer{
     top: 30px;
     display: flex;
     margin: auto;
-    width: 350px;
-    height: 500px;
+    width: 70vw;
+    height: 90vh;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -292,7 +292,6 @@ footer{
       font-size: 12px;
 
   }
-
   /* Style the video: 100% width and height to cover the entire window */
 .myVideo {
     left: 50%;
@@ -339,7 +338,7 @@ footer{
 .copyright{
     text-align: center;
     color: rgb(214, 214, 214);
-    background-color: rgb(104, 93, 0);
+    background-color: darkgray;
     padding-top: 12px;
     padding-bottom: 12px;
 }
