@@ -233,19 +233,20 @@ footer{
 
 /* <!----- FORM login: -----> */
 .formLogin{
+    display: flex;
     background-color: #fff159;
     position: relative;
     top: 30px;
-    display: flex;
     margin: auto;
-    width: 70vw;
-    height: 90vh;
+    width: 90vw;
+    height: 80vh;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .formLogin form{
     display: flex;
+    margin: 0 auto 0 auto;
     flex-direction: column;
     justify-content: space-around;
     padding: 0 10px 0 10px;
@@ -282,7 +283,7 @@ footer{
   }
 
   .logoHeaderLogin{
-      width: 90%;
+      max-width: 300px;
       margin: 0 auto; 
   }
 
@@ -384,6 +385,10 @@ footer{
         padding: 0 10px 0 0;
         margin: 0 0 0 0;
     }
+    .formLogin{
+        width: 50vw;
+        height: 500px;
+    }
 } 
 
 /* <!---------------- MEDIA QUERY compu a partir de acá: -----------------> */
@@ -444,4 +449,9 @@ footer{
     .iconoSeparador:hover {
         color: #fff159;
     }
+    .formLogin{
+        width: 35vw;
+        height: 600px;
+    }
+
 }
