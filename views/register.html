@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Compra y vende en Mercado Liebre, tu tienda online!</title>
-    <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/stylesRegister.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
 
@@ -14,12 +14,10 @@
     <video autoplay muted loop class="myVideo">
         <source src="./images/video-abriendo.caja.mp4" type="video/mp4">
     </video>
-    <header>
-        <!--Por ahora no tiene header-->
-    </header>
-    <main class="formLogin">
+    <main class="formRegister">
         <!-- FORMULARIO de carga de un producto --->
         <form action="/newUser" method="POST" class="formNewUser">
+            <img class="logoHeaderLogin" src="./images/logo-mercado-liebre.png" alt="No encontre Imagen">
             <div>
                 <label>Nombre y apellido</label>
                 <input type="text" name="nombreApellido" placeholder="ej: Juan Perez">
@@ -68,11 +66,12 @@
                 <button type="reset">Borrar</button>
                 <button type="submit">Guardar</button>
             </div>
+            <div class="terminosLogin">
+                <a href="#">Términos y condiciones</a>
+                <a href="../"> - Volver al sitio</a>
+            </div>
         </form>
     </main>
-    <footer>
-
-    </footer>
 </body>
 
 </html>

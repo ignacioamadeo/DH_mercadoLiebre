@@ -1,0 +1,103 @@
+/* <!-- RESET config: --> */
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+li{
+    list-style: none;
+}
+
+.formRegister{
+    display: flex;
+    background-color: #fff159;
+    position: relative;
+    top: 30px;
+    margin: auto;
+    width: 80%;
+    min-width: 350px;
+    height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logoHeaderLogin{
+    display: block;
+    max-width: 250px;
+    margin: 0 auto 50px auto; 
+}   
+
+.terminosLogin{
+    color: rgb(80, 80, 0);
+    text-decoration: none;
+    font-size: 12px;
+
+}
+
+/* <!----- FORM nuevo usuario: -----> */
+
+.formNewUser{
+    display: block;
+    margin: auto;
+}
+.formNewUser div{
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 10px 0 10px 0;
+}
+
+  /* Style the video: 100% width and height to cover the entire window */
+  .myVideo {
+    left: 50%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+  }
+
+  .formNewUser input {
+    border-radius: 5px;
+    border-color: #c7c7c7;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0 5px 0 5px;
+    padding: 4px 0 4px 0;
+    text-align: center;
+    width: 50%;
+}
+
+  .formNewUser button {
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    border-style: none;
+    padding: 10px 25px 10px 25px;
+    margin: 0 10px 0 10px;
+    font-size: 14px;
+  }
+  
+  .formNewUser button:hover {
+    background-color: #5f5f5f;
+    color: white;
+  }
+
+  /* <!---------------- MEDIA QUERY tablet a partir de acá: -----------------> */
+
+@media (min-width: 568px) {
+    .formRegister{
+        width: 70%;
+        height: 90vh;
+    }
+}
+
+/* <!---------------- MEDIA QUERY compu a partir de acá: -----------------> */
+
+@media (min-width: 1000px){
+.formRegister{
+    width: 50%;
+    height: 90vh;
+}
+}
