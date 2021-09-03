@@ -23,3 +23,13 @@ app.get("/register.html", (req, res) => {
 app.get("/producto01.html", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/producto01.html"));
 })
+
+//Rutas y controladores:
+
+let rutasPrueba = require("./routes/pruebaRoutes.js")  // Guardo en variable ruta a requerir
+app.use("/prueba", rutasPrueba) //Uso la ruta asignandola a una dirección http
+
+//Ejemplo ruta variable
+app.use("/pruebaRutaVariable/:idRutaVariable", function(req, res){
+    res.send("Bienvenidos al detalle del producto" + req.params.idRutaVariable);
+});
