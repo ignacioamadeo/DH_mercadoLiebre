@@ -17,8 +17,9 @@ li{
     top: 30px;
     margin: auto;
     width: 80%;
-    min-width: 350px;
-    height: 90vh;
+    min-width: 300px;
+    max-width: 450px;
+    height: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -52,7 +53,7 @@ li{
   /* Style the video: 100% width and height to cover the entire window */
   .myVideo {
     left: 50%;
-    max-height: 100%;
+    max-height: 100vw;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -89,7 +90,6 @@ li{
 @media (min-width: 568px) {
     .formRegister{
         width: 70%;
-        height: 90vh;
     }
 }
 
@@ -98,6 +98,5 @@ li{
 @media (min-width: 1000px){
 .formRegister{
     width: 50%;
-    height: 90vh;
 }
 }
